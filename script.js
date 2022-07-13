@@ -3,10 +3,6 @@ function computerPlay() {
     return handGesture[Math.floor(Math.random() * 3)];
 }
 
-// Create function that takes two parameters - playerSelectio, computerSelection
-// Add two variables that will have value of parameters in lower case
-// Create nested ifs 
-
 function playRound(playerSelection, computerSelection) {
     let playerSelect = playerSelection.toLowerCase();
     let computerSelect = computerSelection.toLowerCase();
