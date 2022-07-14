@@ -32,9 +32,13 @@ function playRound(playerSelection, computerSelection) {
             return "A draw!";
         }
     }
-
 }
 
-const playerSelection = "rock";
+// Function game
+// Create while loop that keep score and message until pc or player got 5 points
+// In while loop use function playRound 
+// Change const playerSelection to be made by prompt
+
+const playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
 const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
