@@ -34,11 +34,26 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-// Function game
-// Create while loop that keep score and message until pc or player got 5 points
-// In while loop use function playRound 
-// Change const playerSelection to be made by prompt
+function game() {
+    let playerScore = 0;
+    let computerScore = 0;
 
-const playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
+    while (playerScore < 5 && computerScore < 5) {
+        const playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
+        const computerSelection = computerPlay();
+        let result = playRound(playerSelection, computerSelection);
+        if (result.includes("draw")) {
+            console.log(result);
+        } else if (result.includes("win")) {
+            playerScore++;
+            console.log(result);
+        } else if (result.includes("lose")) {
+            computerScore++;
+            console.log(result);
+        }
+    }
+
+    console.log(`Player score: ${playerScore}. Computer score: ${computerScore}`);
+}
+
+game();
