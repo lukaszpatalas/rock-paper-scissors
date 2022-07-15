@@ -42,10 +42,10 @@ function game() {
             console.log(result);
         }
     }
-    console.log(declareWinnter(playerScore, computerScore));
+    console.log(declareWinner(playerScore, computerScore));
 }
 
-function declareWinnter(playerScore, computerScore) {
+function declareWinner(playerScore, computerScore) {
     let result = `Player score: ${playerScore}. Computer score: ${computerScore} `;
     if (playerScore > computerScore) {
         result += `The winner is YOU.`;
