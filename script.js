@@ -3,6 +3,10 @@ function computerPlay() {
     return handGesture[Math.floor(Math.random() * 3)];
 }
 
+function playerPlay() {
+    return prompt("Rock, paper or scissors?").toLowerCase();
+}
+
 function playRound(playerSelection, computerSelection) {
     let playerSelect = playerSelection.toLowerCase();
     let computerSelect = computerSelection.toLowerCase();
@@ -25,7 +29,7 @@ function game() {
     let computerScore = 0;
 
     while (playerScore < 5 && computerScore < 5) {
-        const playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
+        const playerSelection = playerPlay();
         const computerSelection = computerPlay();
         let result = playRound(playerSelection, computerSelection);
         if (result.includes("draw")) {
