@@ -24,7 +24,7 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-function game() {
+function start() {
     let playerScore = 0;
     let computerScore = 0;
 
@@ -56,4 +56,4 @@ function declareWinner(playerScore, computerScore) {
     }
 }
 
-game();
+start();
