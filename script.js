@@ -37,18 +37,15 @@ function playerPlay() {
 /* Function generates messages depenging on who win each round */
 
 function playRound(playerSelection, computerSelection) {
-    let playerSelect = playerSelection.toLowerCase();
-    let computerSelect = computerSelection.toLowerCase();
-
-    if (playerSelect === computerSelect) {
+    if (playerSelection === computerSelection) {
         return "A draw! ";
-    } else if ((playerSelect === "rock" && computerSelect === "scissors") ||
-        (playerSelect === "paper" && computerSelect === "rock") ||
-        (playerSelect === "scissors" && computerSelect === "paper")) {
+    } else if ((playerSelection === "rock" && computerSelection === "scissors") ||
+        (playerSelection === "paper" && computerSelection === "rock") ||
+        (playerSelection === "scissors" && computerSelection === "paper")) {
         return "You win!";
-    } else if ((playerSelect === "rock" && computerSelect === "paper") ||
-        (playerSelect === "paper" && computerSelect === "scissors") ||
-        (playerSelect === "scissors" && computerSelect === "rock")) {
+    } else if ((playerSelection === "rock" && computerSelection === "paper") ||
+        (playerSelection === "paper" && computerSelection === "scissors") ||
+        (playerSelection === "scissors" && computerSelection === "rock")) {
         return "You lose!";
     }
 }
