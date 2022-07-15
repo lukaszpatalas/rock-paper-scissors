@@ -1,4 +1,4 @@
-/* Main function that starts, contain information about scores and display output */
+/* Main function that starts application, contain information about scores and display output */
 
 function start() {
     let playerScore = 0;
@@ -34,7 +34,7 @@ function playerPlay() {
     return prompt("Rock, paper or scissors?").toLowerCase();
 }
 
-/* Function generates messages depenging on who win each round */
+/* Function generates messages depending on who win each round */
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
