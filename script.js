@@ -18,25 +18,24 @@ function computerSelect() {
 }
 
 function playRound(playerSelection, computerSelection) {
-        if (playerSelection === computerSelection) {
-            console.log("A draw!");
-            console.log(`Player score: ${playerScore}. Computer score: ${computerScore}`);
-        } else if ((playerSelection === "rock" && computerSelection === "scissors") ||
-            (playerSelection === "paper" && computerSelection === "rock") ||
-            (playerSelection === "scissors" && computerSelection === "paper")) {
-            playerScore++;
-            console.log("You win!");
-            console.log(`Player score: ${playerScore}. Computer score: ${computerScore}`);
-        } else if ((playerSelection === "rock" && computerSelection === "paper") ||
-            (playerSelection === "paper" && computerSelection === "scissors") ||
-            (playerSelection === "scissors" && computerSelection === "rock")) {
-            computerScore++;
-            console.log("You lose!");
-            console.log(`Player score: ${playerScore}. Computer score: ${computerScore}`);
-        }
+    console.log(`Player choice: ${playerSelection}. Computer choice: ${computerSelection}.`)
+    if (playerSelection === computerSelection) {
+        console.log("A draw!");
+    } else if ((playerSelection === "rock" && computerSelection === "scissors") ||
+        (playerSelection === "paper" && computerSelection === "rock") ||
+        (playerSelection === "scissors" && computerSelection === "paper")) {
+        playerScore++;
+        console.log("You win!");
+    } else if ((playerSelection === "rock" && computerSelection === "paper") ||
+        (playerSelection === "paper" && computerSelection === "scissors") ||
+        (playerSelection === "scissors" && computerSelection === "rock")) {
+        computerScore++;
+        console.log("You lose!");
+    }
     if (playerScore === 5 || computerScore === 5) {
         console.log(declareWinner(playerScore, computerScore));
     }
+    console.log(`Player score: ${playerScore}. Computer score: ${computerScore}`);
 }
 
 function declareWinner(playerScore, computerScore) {
