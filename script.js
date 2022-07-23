@@ -3,6 +3,14 @@
 function start() {
     let playerScore = 0;
     let computerScore = 0;
+    const buttons = document.querySelectorAll('button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            console.log(button.id);
+        })
+    })
+
 
     while (playerScore < 5 && computerScore < 5) {
         const playerSelection = playerSelect();
@@ -63,13 +71,4 @@ function declareWinner(playerScore, computerScore) {
         return result;
     }
 }
-
-const buttons = document.querySelectorAll('button');
-
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        console.log(button.id);
-    })
-}) 
-
 start();
