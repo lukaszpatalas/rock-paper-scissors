@@ -1,12 +1,14 @@
 let playerScore = 0;
 let computerScore = 0;
-const buttons = document.querySelectorAll('button');
 
-buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-        playRound(button.id, computerSelect());
+function game() {
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            playRound(button.id, computerSelect());
+        });
     });
-});
+}
 
 function computerSelect() {
     const handGesture = ["rock", "paper", "scissors"];
@@ -47,3 +49,5 @@ function declareWinner(playerScore, computerScore) {
         return result;
     }
 }
+
+game();
