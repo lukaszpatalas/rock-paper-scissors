@@ -5,7 +5,9 @@ function game() {
     const buttons = document.querySelectorAll('button');
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
-            playRound(button.id, computerSelect());
+            if (playerScore < 5 && computerScore < 5) {
+                playRound(button.id, computerSelect());
+            }
         });
     });
 }
@@ -16,7 +18,6 @@ function computerSelect() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    if (playerScore < 5 && computerScore < 5) {
         if (playerSelection === computerSelection) {
             console.log("A draw!");
             console.log(`Player score: ${playerScore}. Computer score: ${computerScore}`);
@@ -33,7 +34,6 @@ function playRound(playerSelection, computerSelection) {
             console.log("You lose!");
             console.log(`Player score: ${playerScore}. Computer score: ${computerScore}`);
         }
-    }
     if (playerScore === 5 || computerScore === 5) {
         console.log(declareWinner(playerScore, computerScore));
     }
