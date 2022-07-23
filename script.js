@@ -32,16 +32,21 @@ function playRound(playerSelection, computerSelection) {
         computerScore++;
         console.log("You lose!");
     }
+    console.log(`Player score: ${playerScore}. Computer score: ${computerScore}`);
+
+    // Extra check as scores can be updated in previous ifs
     if (playerScore === 5 || computerScore === 5) {
         console.log(declareWinner(playerScore, computerScore));
     }
-    console.log(`Player score: ${playerScore}. Computer score: ${computerScore}`);
 }
 
 function declareWinner(playerScore, computerScore) {
     let result = '';
     if (playerScore > computerScore) {
         result += `The winner is YOU.`;
+        return result;
+    } else if (playerScore === computerScore) {
+        result += `There is no winner.`;
         return result;
     } else {
         result += `The winner is COMPUTER.`;
