@@ -13,10 +13,6 @@ function computerSelect() {
     return handGesture[Math.floor(Math.random() * 3)];
 }
 
-function playerSelect() {
-    return prompt("Rock, paper or scissors?").toLowerCase();
-}
-
 function playRound(playerSelection, computerSelection) {
     if (playerScore < 5 && computerScore < 5) {
         if (playerSelection === computerSelection) {
