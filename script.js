@@ -3,16 +3,7 @@
 function start() {
     let playerScore = 0;
     let computerScore = 0;
-    const buttons = document.querySelectorAll('button');
 
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            console.log(button.id);
-        })
-    })
-
-
-    while (playerScore < 5 && computerScore < 5) {
         const playerSelection = playerSelect();
         const computerSelection = computerSelect();
         let result = playRound(playerSelection, computerSelection);
@@ -26,7 +17,6 @@ function start() {
             computerScore++;
             console.log(result);
         }
-    }
     console.log(declareWinner(playerScore, computerScore));
 }
 
@@ -71,4 +61,5 @@ function declareWinner(playerScore, computerScore) {
         return result;
     }
 }
+
 start();
