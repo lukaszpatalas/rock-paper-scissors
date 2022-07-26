@@ -1,0 +1,203 @@
+[33mcommit 706e625827bac704878e953ebc182838f3f8aec6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/rps-ui[m[33m, [m[1;32mrps-ui[m[33m)[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Tue Jul 26 12:51:24 2022 +0100
+
+    Add header and comment out previous code
+
+[33mcommit 26d00fa66b7742dc96a84cfc80991c96f2e1a5fd[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Mon Jul 25 22:02:59 2022 +0100
+
+    Add different icons to the project
+
+[33mcommit fbc2bbe72305d7a503cd51b9546cea3177df7e47[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Mon Jul 25 21:48:22 2022 +0100
+
+    Add fontawesome icons
+
+[33mcommit 6ef6d450449929ccd11c5efa187a2507360afff7[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 23:38:15 2022 +0100
+
+    Add code in case two scores are the same
+
+[33mcommit 540b3eb80fb05ed2946003264b02d1e1352dcbe9[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 23:32:38 2022 +0100
+
+    Move console log to remove duplications
+
+[33mcommit fd537575fb4903f03993b8b6cce1b367000403f3[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 23:21:40 2022 +0100
+
+    Move if statement to make code clearer
+
+[33mcommit 3dcc2baac0cac5e8a8b51d29316c2f9bc77a4df6[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 17:15:16 2022 +0100
+
+    Move event listener inside function
+
+[33mcommit ddb21940db22e72a0265fb1c85f2af070508c998[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 17:12:26 2022 +0100
+
+    Remove function no longer used
+
+[33mcommit febed021b936aaf88a2351c256b8c8beca9f129e[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 17:10:27 2022 +0100
+
+    Add div where results will be displayed
+
+[33mcommit 4c1be3a44ef1dfdb76c536c2b18b5453158561e3[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 17:08:23 2022 +0100
+
+    Add event listener
+
+[33mcommit 9d978acb84490fe09cfafd8c048cedb26170d919[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 14:46:17 2022 +0100
+
+    Change script location
+
+[33mcommit 38ba9f40f37f1a2bd9d178972264e4f062b3c70f[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 14:43:24 2022 +0100
+
+    Remove temporarly while loop as per exercise
+
+[33mcommit e51a75681309c3f955d7c59e8d6b4221fcdba980[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 14:31:09 2022 +0100
+
+    Move event listener inside start to clear up code
+
+[33mcommit 940cc9e4f9ff102445f94a538f2adbcb7d33571d[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 14:11:02 2022 +0100
+
+    Add event listener that logs button id
+
+[33mcommit 5a68f04f9a3f2eb729d09a4a431cffeb0b9c6b88[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 14:02:12 2022 +0100
+
+    Add text to buttons and id values
+
+[33mcommit 0552ad0f5af1f8ef394a6c9f1fe59c9fc0651f3d[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 23 13:58:27 2022 +0100
+
+    Add three buttons for player choice
+
+[33mcommit b735d822f894b3a349404e57cc8f3da620455634[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Sat Jul 16 20:37:12 2022 +0100
+
+    Change title of html
+
+[33mcommit 51b8f6754ea5d05841bea83640d410b43530514f[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Fri Jul 15 17:23:41 2022 +0100
+
+    Change name of function to be more descriptive
+
+[33mcommit 84236f6cf3817336799ce85f9255b6eca655abf8[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Fri Jul 15 15:47:16 2022 +0100
+
+    Small tweaks to comments
+
+[33mcommit dcacf317376d3ffb065e1873d64b05130a4c2426[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Fri Jul 15 15:37:54 2022 +0100
+
+    Replace variables with parameters inside playRound
+
+[33mcommit 32c7eff6a53b9d6bdb7da9d896db4bab3aeadcd6[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Fri Jul 15 15:18:13 2022 +0100
+
+    Add comments about what each function does
+
+[33mcommit b91cd30db4654b7c4792aafd4c4961918ce3b2b9[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Fri Jul 15 14:48:47 2022 +0100
+
+    Change title of the html file to more suitable
+
+[33mcommit 4479ad31c2c63f13e5019967a56c7391f6e24fe5[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Fri Jul 15 14:41:40 2022 +0100
+
+    Change name of function to be more descriptive
+
+[33mcommit 236a5d8d3335d8b7ee13ad7d76e7a1b34387a9ef[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Fri Jul 15 14:17:44 2022 +0100
+
+    Fix spelling typo
+
+[33mcommit 887b4c0609fe29325733c58f925bd2529e9869cb[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Fri Jul 15 14:10:46 2022 +0100
+
+    Add function that declare winner of the game
+
+[33mcommit fb4f01e07ff349a02e69aa54acb533ab7a0094c9[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Fri Jul 15 12:54:28 2022 +0100
+
+    Create helper function for player input
+
+[33mcommit e80ba1a415891bf19b925433682c413bc931623d[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Thu Jul 14 13:10:46 2022 +0100
+
+    Simplify function playRound
+
+[33mcommit e8a1c82a8753d06cc992b798fbc16770bf20f494[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Thu Jul 14 11:58:53 2022 +0100
+
+    Add game function that starts the game
+
+[33mcommit f2e3ec2451543cbee56ac8e1ca6b3cbd9ac8b9de[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Thu Jul 14 10:58:28 2022 +0100
+
+    Add code to take input from user about selection
+
+[33mcommit 9e01893392b21ff7549b3fd850dd7c2fc1cee858[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Wed Jul 13 19:50:47 2022 +0100
+
+    Remove comments about how to design function
+
+[33mcommit d09726c08560fb9e256885df08e1467acadffb09[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Wed Jul 13 19:49:20 2022 +0100
+
+    Create first version of function playRound
+
+[33mcommit 98f910a12bf8a94041d4d6ecd495f25c318dd4cd[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Wed Jul 13 19:23:00 2022 +0100
+
+    Add code to randomly choose from hand gestures
+
+[33mcommit 6816c49f8cab87001c77d10c62126bf2576dc0ea[m
+Author: Lukasz Patalas <lukasz.patalas86@gmail.com>
+Date:   Wed Jul 13 19:14:33 2022 +0100
+
+    Create html and js file
+
+[33mcommit e6204a7a480b72edcde3269b8935c2fb925d3854[m
+Author: lukaszpatalas <106703426+lukaszpatalas@users.noreply.github.com>
+Date:   Tue Jul 12 17:06:43 2022 +0100
+
+    Initial commit
