@@ -6,4 +6,49 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-area {
+  display: flex;
+}
+
+.games-select {
+  display: flex;
+  justify-content: center;
+}
+
+.player-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-icon {
+  align-self: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+} *//*# sourceMappingURL=style.css.map */
