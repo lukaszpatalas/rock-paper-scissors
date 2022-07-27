@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -41,14 +46,4 @@ html {
 .footer {
   display: flex;
   justify-content: center;
-}
-
-/* body {
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    margin: 0;
-    padding: 0;
-} *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
