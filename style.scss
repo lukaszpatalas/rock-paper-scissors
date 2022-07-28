@@ -26,6 +26,10 @@ body {
     flex-direction: column;
 }
 
+h3 {
+    text-align: center;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -34,16 +38,26 @@ body {
 
 .game-area {
     display: flex;
+    gap: 25px;
 }
 
 .games-select {
     display: flex;
     justify-content: center;
+
+    .choice-icon {
+        border: 1px solid black;
+    }
 }
 
 .player-area {
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
 }
 
 .player-icon {
