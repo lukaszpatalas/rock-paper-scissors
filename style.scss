@@ -44,9 +44,19 @@ h3 {
 .games-select {
     display: flex;
     justify-content: center;
+    gap: 15px;
 
     .choice-icon {
-        border: 1px solid black;
+        width: 90px;
+        height: 90px;
+        padding: 10px;
+        border: 1px solid white;
+        &:hover {
+            transform: scale(1.1);
+            color: red;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
     }
 }
 
