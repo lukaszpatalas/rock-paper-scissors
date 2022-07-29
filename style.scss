@@ -11,7 +11,8 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: url('images/background.jpg');
+    background-color: rgb(39, 39, 39);
+    color: #747474;
 }
 
 html,
@@ -28,8 +29,6 @@ body {
 
     .header-wrap {
         width: 100%;
-        background-color: black;
-        padding: 10px 0;
     }
 
     p {
@@ -39,8 +38,8 @@ body {
 
 h1 {
     text-align: center;
-    color: white;
     font-size: 40px;
+    color: #ff652f;
 }
 
 h2 {
@@ -128,7 +127,7 @@ hr {
     display: flex;
     justify-content: center;
     margin-top: auto;
-    background-color: black;
+    background-color: #1f1f1f;
     p {
         color: white;
         font-size: 18px;
