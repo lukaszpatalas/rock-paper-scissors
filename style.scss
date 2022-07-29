@@ -57,9 +57,8 @@ h3 {
 
 hr {
     border: 0;
-    height: 1px;
-    background: #000;
-    background-image: linear-gradient(to right, #ccc, #000, #ccc);
+    height: 2px;
+    background: #747474;
     width: 350px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -94,21 +93,35 @@ hr {
         width: 90px;
         height: 90px;
         padding: 10px;
-        border: 1px solid white;
+        border: 2px solid #747474;
+        border-radius: 10px;
 
         &:hover {
-            transform: scale(1.1);
-            color: red;
-            border: 1px solid black;
+            transform: scale(1.05);
+            transition: transform 0.2s;
+            border: 2px solid #747474;
             border-radius: 10px;
+            cursor: pointer;
         }
     }
+}
+
+#jet:hover {
+    color: #ff652f;
+}
+
+#gun:hover {
+    color: #ffe400;
+}
+
+#bomb:hover {
+    color: #14a76c;
 }
 
 .player-area {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 2px solid #747474;
     border-radius: 10px;
     width: 400px;
     height: 300px;
@@ -131,12 +144,11 @@ hr {
     background-color: #1f1f1f;
 
     p {
-        color: white;
         font-size: 18px;
     }
 
     .github-icon {
-        color: white;
+        color: #747474;
     }
 }
 
