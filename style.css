@@ -119,4 +119,12 @@ hr {
   display: flex;
   justify-content: center;
   margin-top: auto;
+  background-color: black;
+}
+.footer p {
+  color: white;
+  font-size: 18px;
+}
+.footer .github-icon {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

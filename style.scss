@@ -127,4 +127,12 @@ hr {
     display: flex;
     justify-content: center;
     margin-top: auto;
+    background-color: black;
+    p {
+        color: white;
+        font-size: 18px;
+    }
+    .github-icon {
+        color: white;
+    }
 }
