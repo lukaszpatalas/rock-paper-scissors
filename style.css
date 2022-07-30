@@ -100,13 +100,13 @@ hr {
   border-radius: 10px;
   cursor: pointer;
 }
-.player-select #jet:hover {
+.player-select #player-jet:hover {
   color: #ff652f;
 }
-.player-select #gun:hover {
+.player-select #player-gun:hover {
   color: #ffe400;
 }
-.player-select #bomb:hover {
+.player-select #player-bomb:hover {
   color: #14a76c;
 }
 
