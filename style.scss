@@ -127,7 +127,7 @@ hr {
     border: 2px solid #747474;
     border-radius: 10px;
     width: 400px;
-    height: 300px;
+    height: 320px;
     justify-content: center;
 }
 
@@ -137,6 +137,7 @@ hr {
     .user-icon {
         height: 60px;
         width: 60px;
+        padding-top: 20px;
     }
 }
 
@@ -156,7 +157,7 @@ hr {
 
     a:link, a:visited {
         text-decoration: none;
-        color: #747474;
+        color: #ffe400;
     }
 
     a:hover {
