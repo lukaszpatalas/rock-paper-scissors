@@ -153,6 +153,15 @@ hr {
     .github-icon {
         color: #747474;
     }
+
+    a:link, a:visited {
+        text-decoration: none;
+        color: #747474;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 .yellow {

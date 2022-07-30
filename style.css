@@ -140,6 +140,13 @@ hr {
 .footer .github-icon {
   color: #747474;
 }
+.footer a:link, .footer a:visited {
+  text-decoration: none;
+  color: #747474;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
 
 .yellow {
   color: #ffe400;
