@@ -78,35 +78,35 @@ hr {
   gap: 25px;
 }
 
-.games-select {
+.enemy-select,
+.player-select {
   display: flex;
   justify-content: center;
   gap: 15px;
 }
-.games-select .choice-icon {
+.enemy-select .choice-icon,
+.player-select .choice-icon {
   width: 90px;
   height: 90px;
   padding: 10px;
   border: 2px solid #747474;
   border-radius: 10px;
 }
-.games-select .choice-icon:hover {
+
+.player-select .choice-icon:hover {
   transform: scale(1.05);
   transition: transform 0.2s;
   border: 2px solid #747474;
   border-radius: 10px;
   cursor: pointer;
 }
-
-#jet:hover {
+.player-select #jet:hover {
   color: #ff652f;
 }
-
-#gun:hover {
+.player-select #gun:hover {
   color: #ffe400;
 }
-
-#bomb:hover {
+.player-select #bomb:hover {
   color: #14a76c;
 }
 

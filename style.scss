@@ -84,7 +84,8 @@ hr {
     gap: 25px;
 }
 
-.games-select {
+.enemy-select,
+.player-select {
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -95,27 +96,29 @@ hr {
         padding: 10px;
         border: 2px solid #747474;
         border-radius: 10px;
-
-        &:hover {
-            transform: scale(1.05);
-            transition: transform 0.2s;
-            border: 2px solid #747474;
-            border-radius: 10px;
-            cursor: pointer;
-        }
     }
 }
 
-#jet:hover {
-    color: #ff652f;
-}
+.player-select {
+    .choice-icon:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s;
+        border: 2px solid #747474;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 
-#gun:hover {
-    color: #ffe400;
-}
+    #jet:hover {
+        color: #ff652f;
+    }
 
-#bomb:hover {
-    color: #14a76c;
+    #gun:hover {
+        color: #ffe400;
+    }
+
+    #bomb:hover {
+        color: #14a76c;
+    }
 }
 
 .player-area {
