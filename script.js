@@ -18,19 +18,25 @@ function computerSelect() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    console.log(`Player choice: ${playerSelection}. Computer choice: ${computerSelection}.`)
+    let playerChoice = playerSelection[0].toUpperCase() + playerSelection.slice(1);
+    let computerChoice = computerSelection[0].toUpperCase() + computerSelection.slice(1);
+
+    console.log(`Player choice: ${playerChoice}. Computer choice: ${computerChoice}.`)
     if (playerSelection === computerSelection) {
         console.log("A draw!");
+        console.log(`${playerChoice} ties ${computerChoice}`)
     } else if ((playerSelection === "jet" && computerSelection === "gun") ||
         (playerSelection === "bomb" && computerSelection === "jet") ||
         (playerSelection === "gun" && computerSelection === "bomb")) {
         playerScore++;
         console.log("You win!");
+        console.log(`${playerChoice} beats ${computerChoice}`)
     } else if ((playerSelection === "gun" && computerSelection === "jet") ||
         (playerSelection === "jet" && computerSelection === "bomb") ||
         (playerSelection === "bomb" && computerSelection === "gun")) {
         computerScore++;
         console.log("You lose!");
+        console.log(`${computerChoice} beats ${playerChoice}`)
     }
     console.log(`Player score: ${playerScore}. Computer score: ${computerScore}`);
 
