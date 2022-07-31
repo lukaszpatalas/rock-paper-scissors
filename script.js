@@ -1,7 +1,11 @@
 let playerScore = 0;
 let computerScore = 0;
+const playerResult = document.querySelector("#player-score");
+const computerResult = document.querySelector("#computer-score");
+
 
 function game() {
+
     const buttons = document.querySelectorAll(".player-select > .game-select");
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
@@ -29,12 +33,14 @@ function playRound(playerSelection, computerSelection) {
         (playerSelection === "bomb" && computerSelection === "jet") ||
         (playerSelection === "gun" && computerSelection === "bomb")) {
         playerScore++;
+        playerResult.textContent = playerScore;
         console.log("You win!");
         console.log(`${playerChoice} beats ${computerChoice}`)
     } else if ((playerSelection === "gun" && computerSelection === "jet") ||
         (playerSelection === "jet" && computerSelection === "bomb") ||
         (playerSelection === "bomb" && computerSelection === "gun")) {
         computerScore++;
+        computerResult.textContent = computerScore;
         console.log("You lose!");
         console.log(`${computerChoice} beats ${playerChoice}`)
     }
