@@ -2,7 +2,7 @@ let playerScore = 0;
 let computerScore = 0;
 
 function game() {
-    const buttons = document.querySelectorAll('button');
+    const buttons = document.querySelectorAll(".player-select > .game-select");
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
             if (playerScore < 5 && computerScore < 5) {

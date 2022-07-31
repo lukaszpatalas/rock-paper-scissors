@@ -113,19 +113,18 @@ hr {
         cursor: pointer;
     }
 
-    #player-jet:hover {
+    .orange-hover:hover {
         color: #ff652f;
     }
 
-    #player-gun:hover {
+    .yellow-hover:hover {
         color: #ffe400;
     }
 
-    #player-bomb:hover {
+    .green-hover:hover {
         color: #14a76c;
     }
 }
-
 .player-area {
     display: flex;
     flex-direction: column;
