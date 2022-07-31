@@ -13,7 +13,7 @@ function game() {
 }
 
 function computerSelect() {
-    const handGesture = ["rock", "paper", "scissors"];
+    const handGesture = ["jet", "gun", "bomb"];
     return handGesture[Math.floor(Math.random() * 3)];
 }
 
@@ -21,14 +21,14 @@ function playRound(playerSelection, computerSelection) {
     console.log(`Player choice: ${playerSelection}. Computer choice: ${computerSelection}.`)
     if (playerSelection === computerSelection) {
         console.log("A draw!");
-    } else if ((playerSelection === "rock" && computerSelection === "scissors") ||
-        (playerSelection === "paper" && computerSelection === "rock") ||
-        (playerSelection === "scissors" && computerSelection === "paper")) {
+    } else if ((playerSelection === "jet" && computerSelection === "gun") ||
+        (playerSelection === "bomb" && computerSelection === "jet") ||
+        (playerSelection === "gun" && computerSelection === "bomb")) {
         playerScore++;
         console.log("You win!");
-    } else if ((playerSelection === "rock" && computerSelection === "paper") ||
-        (playerSelection === "paper" && computerSelection === "scissors") ||
-        (playerSelection === "scissors" && computerSelection === "rock")) {
+    } else if ((playerSelection === "gun" && computerSelection === "jet") ||
+        (playerSelection === "jet" && computerSelection === "bomb") ||
+        (playerSelection === "bomb" && computerSelection === "gun")) {
         computerScore++;
         console.log("You lose!");
     }
