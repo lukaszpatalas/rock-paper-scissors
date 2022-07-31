@@ -182,3 +182,9 @@ hr {
 .green {
     color: #14a76c;
 }
+
+@media screen and (max-width: 875px) {
+    .game-area {
+        flex-direction: column;
+    }
+}
