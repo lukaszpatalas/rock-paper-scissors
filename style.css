@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(39, 39, 39);
-  color: #747474;
+  color: #C9C9C9;
 }
 
 html,
@@ -29,25 +29,29 @@ body {
 }
 .header .header-wrap {
   width: 100%;
+  background-color: #1f1f1f;
 }
 .header p {
-  font-size: 20px;
+  font-size: 26px;
+  color: #dadada;
 }
 
 h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   color: #ff652f;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
+  color: #ff652f;
 }
 
 h3 {
   text-align: center;
   font-size: 30px;
+  color: #dadada;
 }
 
 hr {
@@ -70,7 +74,8 @@ hr {
 }
 .message-area p {
   text-align: center;
-  font-size: 20px;
+  font-size: 26px;
+  color: #dadada;
 }
 
 .game-area {
@@ -137,11 +142,13 @@ hr {
 }
 .footer p {
   font-size: 18px;
+  color: #dadada;
 }
 .footer .github-icon {
-  color: #747474;
+  color: #dadada;
 }
-.footer a:link, .footer a:visited {
+.footer a:link,
+.footer a:visited {
   text-decoration: none;
   color: #ffe400;
 }
