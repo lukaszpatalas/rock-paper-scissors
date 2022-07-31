@@ -52,6 +52,7 @@ function playRound(playerSelection, computerSelection) {
 
     // Extra check as scores can be updated in previous ifs
     if (playerScore === 5 || computerScore === 5) {
+        roundInfo.textContent = declareWinner(playerScore, computerScore);
         console.log(declareWinner(playerScore, computerScore));
     }
 }
@@ -59,13 +60,13 @@ function playRound(playerSelection, computerSelection) {
 function declareWinner(playerScore, computerScore) {
     let result = '';
     if (playerScore > computerScore) {
-        result += `The winner is YOU.`;
+        result += `Well done! The winner is you.`;
         return result;
     } else if (playerScore === computerScore) {
         result += `There is no winner.`;
         return result;
     } else {
-        result += `The winner is COMPUTER.`;
+        result += `My condolence. The winner is computer.`;
         return result;
     }
 }
