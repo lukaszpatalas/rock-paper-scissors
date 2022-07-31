@@ -1,7 +1,5 @@
 let playerScore = 0;
 let computerScore = 0;
-const playerResult = document.querySelector("#player-score");
-const computerResult = document.querySelector("#computer-score");
 
 
 function game() {
@@ -22,10 +20,13 @@ function computerSelect() {
 }
 
 function playRound(playerSelection, computerSelection) {
+    const playerResult = document.querySelector("#player-score");
+    const computerResult = document.querySelector("#computer-score");
     let playerChoice = playerSelection[0].toUpperCase() + playerSelection.slice(1);
     let computerChoice = computerSelection[0].toUpperCase() + computerSelection.slice(1);
 
     console.log(`Player choice: ${playerChoice}. Computer choice: ${computerChoice}.`)
+
     if (playerSelection === computerSelection) {
         console.log("A draw!");
         console.log(`${playerChoice} ties ${computerChoice}`)
