@@ -98,8 +98,6 @@ function playRound(playerSelection, computerSelection) {
     let playerChoice = playerSelection[0].toUpperCase() + playerSelection.slice(1);
     let computerChoice = computerSelection[0].toUpperCase() + computerSelection.slice(1);
 
-    console.log(`Player choice: ${playerChoice}. Computer choice: ${computerChoice}.`)
-
     if (playerSelection === computerSelection) {
         roundInfo.textContent = "A draw!";
         roundMessage.textContent = `${playerChoice} ties ${computerChoice}`;
@@ -118,12 +116,10 @@ function playRound(playerSelection, computerSelection) {
         roundInfo.textContent = "You lose!";
         roundMessage.textContent = `${computerChoice} beats ${playerChoice}`;
     }
-    console.log(`Player score: ${playerScore}. Computer score: ${computerScore}`);
 
     // Extra check as scores can be updated in previous ifs
     if (playerScore === 5 || computerScore === 5) {
         roundInfo.textContent = declareWinner(playerScore, computerScore);
-        console.log(declareWinner(playerScore, computerScore));
     }
 }
 
