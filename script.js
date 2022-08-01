@@ -20,6 +20,20 @@ function computerSelect() {
     const computerChoice = handGesture[Math.floor(Math.random() * 3)];
 
     const computerIcons = document.querySelectorAll(".enemy-select .choice-icon");
+/*     computerIcons.forEach((icon) => {
+        icon.style.color = "#dadada";
+        icon.style.borderColor = "#747474";
+        if (icon.classList.contains("fa-jet-fighter")) {
+            icon.style.color = "#ff652f";
+            icon.style.borderColor = "#ff652f";
+        } else if (icon.classList.contains("fa-gun")) {
+            icon.style.color = "#ffe400";
+            icon.style.borderColor = "#ffe400";
+        } else if (icon.classList.contains("fa-bomb")) {
+            icon.style.color = "#14a76c";
+            icon.style.borderColor = "#14a76c";
+        }
+    }) */
     if (computerChoice === "jet") {
         computerIcons[0].style.color = "#ff652f";
         computerIcons[0].style.borderColor = "#ff652f";
