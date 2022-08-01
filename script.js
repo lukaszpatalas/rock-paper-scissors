@@ -32,7 +32,7 @@ function game() {
                     playerIcons[2].style.color = "#14a76c";
                     playerIcons[2].style.borderColor = "#14a76c";
                 }
-                playRound(button.id, computerSelect()); 
+                playRound(button.id, computerSelect());
             }
         });
     });
@@ -40,7 +40,32 @@ function game() {
 
 function computerSelect() {
     const handGesture = ["jet", "gun", "bomb"];
-    return handGesture[Math.floor(Math.random() * 3)];
+    const computerChoice = handGesture[Math.floor(Math.random() * 3)];
+
+    const computerIcons = document.querySelectorAll(".enemy-select .choice-icon");
+    if (computerChoice === "jet") {
+        computerIcons[0].style.color = "#ff652f";
+        computerIcons[0].style.borderColor = "#ff652f";
+        computerIcons[1].style.color = "#dadada";
+        computerIcons[1].style.borderColor = "#747474";
+        computerIcons[2].style.color = "#dadada";
+        computerIcons[2].style.borderColor = "#747474";
+    } else if (computerChoice === "gun") {
+        computerIcons[0].style.color = "#dadada";
+        computerIcons[0].style.borderColor = "#747474";
+        computerIcons[1].style.color = "#ffe400";
+        computerIcons[1].style.borderColor = "#ffe400";
+        computerIcons[2].style.color = "#dadada";
+        computerIcons[2].style.borderColor = "#747474";
+    } else {
+        computerIcons[0].style.color = "#dadada";
+        computerIcons[0].style.borderColor = "#747474";
+        computerIcons[1].style.color = "#dadada";
+        computerIcons[1].style.borderColor = "#747474";
+        computerIcons[2].style.color = "#14a76c";
+        computerIcons[2].style.borderColor = "#14a76c";
+    }
+    return computerChoice;
 }
 
 function playRound(playerSelection, computerSelection) {
