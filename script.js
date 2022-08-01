@@ -5,10 +5,34 @@ let computerScore = 0;
 function game() {
 
     const buttons = document.querySelectorAll(".player-select > .game-select");
+
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
+            const playerIcons = document.querySelectorAll(".player-select .choice-icon");
             if (playerScore < 5 && computerScore < 5) {
-                playRound(button.id, computerSelect());
+                if (button.classList.contains("jet")) {
+                    playerIcons[0].style.color = "#ff652f";
+                    playerIcons[0].style.borderColor = "#ff652f";
+                    playerIcons[1].style.color = "#dadada";
+                    playerIcons[1].style.borderColor = "#747474";
+                    playerIcons[2].style.color = "#dadada";
+                    playerIcons[2].style.borderColor = "#747474";
+                } else if (button.classList.contains("gun")) {
+                    playerIcons[0].style.color = "#dadada";
+                    playerIcons[0].style.borderColor = "#747474";
+                    playerIcons[1].style.color = "#ffe400";
+                    playerIcons[1].style.borderColor = "#ffe400";
+                    playerIcons[2].style.color = "#dadada";
+                    playerIcons[2].style.borderColor = "#747474";
+                } else {
+                    playerIcons[0].style.color = "#dadada";
+                    playerIcons[0].style.borderColor = "#747474";
+                    playerIcons[1].style.color = "#dadada";
+                    playerIcons[1].style.borderColor = "#747474";
+                    playerIcons[2].style.color = "#14a76c";
+                    playerIcons[2].style.borderColor = "#14a76c";
+                }
+                playRound(button.id, computerSelect()); 
             }
         });
     });

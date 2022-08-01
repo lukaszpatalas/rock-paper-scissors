@@ -123,6 +123,21 @@ hr {
   justify-content: center;
 }
 
+.jet-chosen {
+  color: #ff652f;
+  border: 2px solid;
+}
+
+.gun-chosen {
+  color: #ffe400;
+  border: 2px solid;
+}
+
+.bomb-chosen {
+  color: #14a76c;
+  border: 2px solid;
+}
+
 .player-icon {
   align-self: center;
 }
