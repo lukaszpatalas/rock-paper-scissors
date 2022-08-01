@@ -99,7 +99,7 @@ hr {
 }
 
 .player-select .choice-icon:hover {
-  border: 2px solid #747474;
+  border: 2px solid;
   border-radius: 10px;
   cursor: pointer;
 }
