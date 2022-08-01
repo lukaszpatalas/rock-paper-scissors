@@ -20,6 +20,9 @@ function computerSelect() {
     const computerChoice = handGesture[Math.floor(Math.random() * 3)];
 
     const computerIcons = document.querySelectorAll(".enemy-select .choice-icon");
+
+    // Try alter this code with Node.parentNode
+
 /*     computerIcons.forEach((icon) => {
         icon.style.color = "#dadada";
         icon.style.borderColor = "#747474";
