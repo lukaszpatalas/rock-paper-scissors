@@ -65,10 +65,9 @@ function playRound(playerSelection, computerSelection) {
     const playerResult = document.querySelector("#player-score");
     const computerResult = document.querySelector("#computer-score");
     const roundInfo = document.querySelector("#round-info");
-    const roundMessage = document.querySelector("#round-message")
+    const roundMessage = document.querySelector("#round-message");
     let playerChoice = playerSelection[0].toUpperCase() + playerSelection.slice(1);
     let computerChoice = computerSelection[0].toUpperCase() + computerSelection.slice(1);
-
 
     if (playerSelection === computerSelection) {
         roundInfo.textContent = "A draw!";
@@ -88,12 +87,10 @@ function playRound(playerSelection, computerSelection) {
         roundInfo.textContent = "You lose!";
         roundMessage.textContent = `${computerChoice} beats ${playerChoice}`;
     }
-    console.log(`Player score: ${playerScore}. Computer score: ${computerScore}`);
 
     // Extra check as scores can be updated in previous ifs
     if (playerScore === 5 || computerScore === 5) {
         roundInfo.textContent = declareWinner(playerScore, computerScore);
-        console.log(declareWinner(playerScore, computerScore));
     }
 }
 
