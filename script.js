@@ -1,7 +1,8 @@
 let playerScore = 0;
 let computerScore = 0;
+
 function game() {
-    const buttons = document.querySelectorAll(".player-select > .game-select");
+    const buttons = document.querySelectorAll(".player-select > div.game-select");
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
             if (playerScore < 5 && computerScore < 5) {
@@ -10,6 +11,7 @@ function game() {
         });
     });
 }
+
 function computerSelect() {
     const handGesture = ["jet", "gun", "bomb"];
     const computerChoice = handGesture[Math.floor(Math.random() * 3)];
@@ -34,32 +36,31 @@ function computerSelect() {
     })
     return computerChoice;
 }
+
 function playerSelect(button) {
     const playerIcons = document.querySelectorAll(".player-select .choice-icon");
-    if (button.classList.contains("jet")) {
-        playerIcons[0].style.color = "#ff652f";
-        playerIcons[0].style.borderColor = "#ff652f";
-        playerIcons[1].style.color = "#dadada";
-        playerIcons[1].style.borderColor = "#747474";
-        playerIcons[2].style.color = "#dadada";
-        playerIcons[2].style.borderColor = "#747474";
-    } else if (button.classList.contains("gun")) {
-        playerIcons[0].style.color = "#dadada";
-        playerIcons[0].style.borderColor = "#747474";
-        playerIcons[1].style.color = "#ffe400";
-        playerIcons[1].style.borderColor = "#ffe400";
-        playerIcons[2].style.color = "#dadada";
-        playerIcons[2].style.borderColor = "#747474";
-    } else if (button.classList.contains("bomb")) {
-        playerIcons[0].style.color = "#dadada";
-        playerIcons[0].style.borderColor = "#747474";
-        playerIcons[1].style.color = "#dadada";
-        playerIcons[1].style.borderColor = "#747474";
-        playerIcons[2].style.color = "#14a76c";
-        playerIcons[2].style.borderColor = "#14a76c";
-    }
+    const playerChoice = button.id;
+
+    playerIcons.forEach((icon) => {
+        if (icon.parentNode.classList.contains(playerChoice)) {
+            if (playerChoice === "jet") {
+                icon.style.color = "#ff652f";
+                icon.style.borderColor = "#ff652f";
+            } else if (playerChoice === "gun") {
+                icon.style.color = "#ffe400";
+                icon.style.borderColor = "#ffe400";
+            } else if (playerChoice === "bomb") {
+                icon.style.color = "#14a76c";
+                icon.style.borderColor = "#14a76c";
+            }
+        } else if (!icon.parentNode.classList.contains(playerChoice)) {
+            icon.style.color = "#dadada";
+            icon.style.borderColor = "#747474";
+        }
+    })
     return button.id;
 }
+
 function playRound(playerSelection, computerSelection) {
     const playerResult = document.querySelector("#player-score");
     const computerResult = document.querySelector("#computer-score");
@@ -110,4 +111,5 @@ function declareWinner(playerScore, computerScore) {
         return result;
     }
 }
+
 game();
