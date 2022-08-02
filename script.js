@@ -69,7 +69,6 @@ function playRound(playerSelection, computerSelection) {
     let playerChoice = playerSelection[0].toUpperCase() + playerSelection.slice(1);
     let computerChoice = computerSelection[0].toUpperCase() + computerSelection.slice(1);
 
-    console.log(`Player choice: ${playerChoice}. Computer choice: ${computerChoice}.`)
 
     if (playerSelection === computerSelection) {
         roundInfo.textContent = "A draw!";
