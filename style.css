@@ -168,16 +168,15 @@ hr {
 .footer a:hover {
   text-decoration: underline;
 }
-
-.yellow {
-  color: #ffe400;
-}
-
-.orange {
+.footer span {
   color: #ff652f;
 }
 
-.green {
+.yellow-icon {
+  color: #ffe400;
+}
+
+.green-icon {
   color: #14a76c;
 }
 
