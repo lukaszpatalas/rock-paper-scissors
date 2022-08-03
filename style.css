@@ -184,4 +184,20 @@ hr {
   .game-area {
     flex-direction: column;
   }
+  .player-area {
+    width: 80vw;
+  }
+  .enemy-select,
+.player-select {
+    gap: 15px;
+  }
+  .enemy-select .choice-icon,
+.player-select .choice-icon {
+    width: 18vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header p {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */
