@@ -159,6 +159,11 @@ hr {
 }
 .footer .github-icon {
   color: #dadada;
+  transition: 0.5s;
+}
+.footer .github-icon:hover {
+  transform: rotate(360deg) scale(1.25);
+  transition: 0.5s;
 }
 .footer a:link,
 .footer a:visited {

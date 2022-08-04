@@ -7,3 +7,4 @@ between colours when deciding about colour layout.
 
 I will also take the opportunity to learn about using and styling 
 fontawesome icons, as I will be using them for the first time. 
+
