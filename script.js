@@ -108,4 +108,5 @@ function declareWinner(playerScore, computerScore) {
     }
 }
 
+
 game();

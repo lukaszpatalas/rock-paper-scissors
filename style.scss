@@ -1,3 +1,18 @@
+// Variables for colour
+
+$background-color-one: #272727;
+$choice-color: #C9C9C9;
+$background-color-two: #1f1f1f;
+$font-color-one: #ff652f;
+$font-color-two: #dadada;
+$hr-color: #747474;
+$jet-hover: #ff652f;
+$gun-hover: #ffe400;
+$bomb-hover: #14a76c;
+$player-icon: #14a76c;
+$enemy-icon: #ffe400;
+$border-color: #747474;
+
 html {
     box-sizing: border-box;
 }
@@ -11,8 +26,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(39, 39, 39);
-    color: #C9C9C9;
+    background-color: $background-color-one;
 }
 
 html,
@@ -29,31 +43,31 @@ body {
 
     .header-wrap {
         width: 100%;
-        background-color: #1f1f1f;
+        background-color: $background-color-two;
     }
 
     p {
         font-size: 26px;
-        color: #dadada;
+        color: $font-color-two;
     }
 }
 
 h1 {
     text-align: center;
     font-size: 50px;
-    color: #ff652f;
+    color: $font-color-one;
 }
 
 h2 {
     font-size: 40px;
     text-align: center;
-    color: #dadada;
+    color: $font-color-two;
 }
 
 h3 {
     text-align: center;
     font-size: 30px;
-    color: #dadada;
+    color: $font-color-two;
 }
 
 // Code for hr was copied from https://css-tricks.com/examples/hrs/ 
@@ -62,7 +76,7 @@ h3 {
 hr {
     border: 0;
     height: 2px;
-    background: #747474;
+    background: $hr-color;
     width: 450px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -80,7 +94,7 @@ hr {
     p {
         text-align: center;
         font-size: 26px;
-        color: #dadada;
+        color: $font-color-two;
     }
 }
 
@@ -99,8 +113,9 @@ hr {
         width: 90px;
         height: 90px;
         padding: 10px;
-        border: 2px solid #747474;
+        border: 2px solid $border-color;
         border-radius: 10px;
+        color: $choice-color;
     }
 }
 
@@ -112,44 +127,29 @@ hr {
     }
 
     .orange-hover:hover {
-        color: #ff652f;
+        color: $jet-hover;
     }
 
     .yellow-hover:hover {
-        color: #ffe400;
+        color: $gun-hover;
     }
 
     .green-hover:hover {
-        color: #14a76c;
+        color: $bomb-hover
     }
 }
 
 .player-area {
     display: flex;
     flex-direction: column;
-    border: 2px solid #747474;
+    border: 2px solid $border-color;
     border-radius: 10px;
     width: 400px;
     height: 320px;
     justify-content: center;
 }
 
-.jet-chosen {
-    color: #ff652f;
-    border: 2px solid;
-}
-
-.gun-chosen {
-    color: #ffe400;
-    border: 2px solid;
-}
-
-.bomb-chosen {
-    color: #14a76c;
-    border: 2px solid;
-}
-
-.player-icon {
+.player-icon, .enemy-icon {
     align-self: center;
 
     .user-icon {
@@ -159,19 +159,27 @@ hr {
     }
 }
 
+.player-icon {
+    color: $player-icon;
+}
+
+.enemy-icon {
+    color: $enemy-icon;
+}
+
 .footer {
     display: flex;
     justify-content: center;
     margin-top: auto;
-    background-color: #1f1f1f;
+    background-color: $background-color-two;
 
     p {
         font-size: 18px;
-        color: #dadada;
+        color: $font-color-two;
     }
 
     .github-icon {
-        color: #dadada;
+        color: $font-color-two;
         transition: 0.5s;
         &:hover {
             transform: rotate(360deg) scale(1.25);
@@ -182,24 +190,12 @@ hr {
     a:link,
     a:visited {
         text-decoration: none;
-        color: #ff652f;
+        color: $font-color-one;
     }
 
     a:hover {
         text-decoration: underline;
     }
-
-    span {
-        color: #ff652f;
-    }
-}
-
-.yellow-icon {
-    color: #ffe400;
-}
-
-.green-icon {
-    color: #14a76c;
 }
 
 @media screen and (max-width: 875px) {

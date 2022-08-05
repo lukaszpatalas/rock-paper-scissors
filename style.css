@@ -11,8 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(39, 39, 39);
-  color: #C9C9C9;
+  background-color: #272727;
 }
 
 html,
@@ -96,6 +95,7 @@ hr {
   padding: 10px;
   border: 2px solid #747474;
   border-radius: 10px;
+  color: #C9C9C9;
 }
 
 .player-select .choice-icon:hover {
@@ -123,28 +123,21 @@ hr {
   justify-content: center;
 }
 
-.jet-chosen {
-  color: #ff652f;
-  border: 2px solid;
-}
-
-.gun-chosen {
-  color: #ffe400;
-  border: 2px solid;
-}
-
-.bomb-chosen {
-  color: #14a76c;
-  border: 2px solid;
-}
-
-.player-icon {
+.player-icon, .enemy-icon {
   align-self: center;
 }
-.player-icon .user-icon {
+.player-icon .user-icon, .enemy-icon .user-icon {
   height: 60px;
   width: 60px;
   padding-top: 20px;
+}
+
+.player-icon {
+  color: #14a76c;
+}
+
+.enemy-icon {
+  color: #ffe400;
 }
 
 .footer {
@@ -172,17 +165,6 @@ hr {
 }
 .footer a:hover {
   text-decoration: underline;
-}
-.footer span {
-  color: #ff652f;
-}
-
-.yellow-icon {
-  color: #ffe400;
-}
-
-.green-icon {
-  color: #14a76c;
 }
 
 @media screen and (max-width: 875px) {
