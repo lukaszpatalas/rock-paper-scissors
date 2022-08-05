@@ -5,7 +5,7 @@ function game() {
     const buttons = document.querySelectorAll(".player-select > div.game-select");
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
-            if (playerScore < 5 && computerScore < 5) {
+            if (playerScore < 3 && computerScore < 3) {
                 playRound(playerSelect(button), computerSelect());
             }
         });
@@ -89,7 +89,7 @@ function playRound(playerSelection, computerSelection) {
     }
 
     // Extra check as scores can be updated in previous ifs
-    if (playerScore === 5 || computerScore === 5) {
+    if (playerScore === 3 || computerScore === 3) {
         roundInfo.textContent = declareWinner(playerScore, computerScore);
     }
 }
