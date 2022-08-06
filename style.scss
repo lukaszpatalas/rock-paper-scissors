@@ -1,8 +1,8 @@
 // Variables for colour
 
-$background-color-one: #272727;
+$bg-color-one: #272727;
 $choice-color: #C9C9C9;
-$background-color-two: #1f1f1f;
+$bg-color-two: #1f1f1f;
 $font-color-one: #ff652f;
 $font-color-two: #dadada;
 $hr-color: #747474;
@@ -26,7 +26,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: $background-color-one;
+    background-color: $bg-color-one;
 }
 
 html,
@@ -43,7 +43,7 @@ body {
 
     .header-wrap {
         width: 100%;
-        background-color: $background-color-two;
+        background-color: $bg-color-two;
     }
 
     p {
@@ -171,7 +171,7 @@ hr {
     display: flex;
     justify-content: center;
     margin-top: auto;
-    background-color: $background-color-two;
+    background-color: $bg-color-two;
 
     p {
         font-size: 18px;
@@ -208,7 +208,7 @@ hr {
 .repeat:hover {
     box-shadow: none;
     transform: translate(1px, 1px);
-    box-shadow: 1px 1px 2px 0px #C9C9C9;
+    box-shadow: 1px 1px 1px 0px #C9C9C9;
 }
 
 @media screen and (max-width: 875px) {
