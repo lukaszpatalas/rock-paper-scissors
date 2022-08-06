@@ -101,6 +101,10 @@ function repeatGame() {
     main.appendChild(button);
     button.classList.add('.repeat');
     button.textContent = 'Repeat the game?';
+
+    button.addEventListener('click', () => {
+        window.location.reload();
+    })
 }
 
 function declareWinner(playerScore, computerScore) {
