@@ -103,7 +103,10 @@ function repeatGame() {
     button.textContent = 'Repeat the game?';
 
     button.addEventListener('click', () => {
-        window.location.reload();
+        button.classList.add('yellow-border');
+        setTimeout(() => {
+            window.location.reload();
+        }, "400")
     })
 }
 

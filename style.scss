@@ -230,6 +230,10 @@ hr {
     color: $enemy-icon;
 }
 
+.yellow-border {
+    border-color: #ffe400;
+}
+
 @media screen and (max-width: 875px) {
     .game-area {
         flex-direction: column;
