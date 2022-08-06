@@ -169,7 +169,7 @@ hr {
 
 .repeat {
   padding: 10px;
-  margin-top: 20px;
+  margin: 20px 0;
   box-shadow: 2px 2px 2px 0px #C9C9C9;
   transition: all 0.1s ease-out;
 }
