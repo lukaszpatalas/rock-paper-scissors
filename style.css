@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #272727;
+  background-color: #303030;
 }
 
 html,
@@ -28,7 +28,7 @@ body {
 }
 .header .header-wrap {
   width: 100%;
-  background-color: #1f1f1f;
+  background-color: #272727;
 }
 .header p {
   font-size: 26px;
@@ -93,13 +93,13 @@ hr {
   width: 90px;
   height: 90px;
   padding: 10px;
-  border: 2px solid #747474;
+  border: 3px solid #747474;
   border-radius: 10px;
   color: #C9C9C9;
 }
 
 .player-select .choice-icon:hover {
-  border: 2px solid;
+  border: 3px solid;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -116,9 +116,9 @@ hr {
 .player-area {
   display: flex;
   flex-direction: column;
-  border: 2px solid #747474;
+  border: 3px solid #747474;
   border-radius: 10px;
-  width: 400px;
+  width: 410px;
   height: 320px;
   justify-content: center;
 }
@@ -144,7 +144,7 @@ hr {
   display: flex;
   justify-content: center;
   margin-top: auto;
-  background-color: #1f1f1f;
+  background-color: #272727;
 }
 .footer p {
   font-size: 18px;
@@ -170,14 +170,19 @@ hr {
 .repeat {
   padding: 10px;
   margin: 20px 0;
-  box-shadow: 2px 2px 2px 0px #C9C9C9;
+  box-shadow: 6px 8px 0px 0px #161616;
   transition: all 0.1s ease-out;
+  background-color: #303030;
+  font: 30px "Times New Roman";
+  color: #dadada;
+  border: 3px solid #747474;
+  border-radius: 5px;
 }
 
 .repeat:hover {
-  box-shadow: none;
-  transform: translate(1px, 1px);
-  box-shadow: 1px 1px 1px 0px #C9C9C9;
+  transform: translate(1.5px, 2px);
+  box-shadow: 1.5px 2px 0px 0px #161616;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 875px) {
