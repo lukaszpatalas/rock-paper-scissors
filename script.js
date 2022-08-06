@@ -109,7 +109,11 @@ function repeatGame() {
     button.addEventListener('mouseup', () => {
         setTimeout(() => {
             window.location.reload();
-        }, "100")
+        }, "200")
+    })
+
+    button.addEventListener('mouseout', () => {
+        button.classList.remove('yellow-border');
     })
 }
 
