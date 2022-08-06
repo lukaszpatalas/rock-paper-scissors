@@ -95,13 +95,21 @@ hr {
   padding: 10px;
   border: 3px solid #747474;
   border-radius: 5px;
-  color: #C9C9C9;
+  color: #dadada;
+}
+
+.player-select .choice-icon {
+  box-shadow: 6px 8px 0px 0px #161616;
+  transition: all 0.1s ease-out;
+  background-color: #303030;
 }
 
 .player-select .choice-icon:hover {
-  border: 3px solid;
+  border: 3px solid #747474;
   border-radius: 5px;
   cursor: pointer;
+  transform: translate(2px, 2px);
+  box-shadow: 4px 6px 0px 0px #161616;
 }
 .player-select .orange-hover:hover {
   color: #ff652f;
@@ -123,10 +131,12 @@ hr {
   justify-content: center;
 }
 
-.player-icon, .enemy-icon {
+.player-icon,
+.enemy-icon {
   align-self: center;
 }
-.player-icon .user-icon, .enemy-icon .user-icon {
+.player-icon .user-icon,
+.enemy-icon .user-icon {
   height: 60px;
   width: 60px;
   padding-top: 20px;
@@ -183,6 +193,7 @@ hr {
   transform: translate(2px, 2px);
   box-shadow: 4px 6px 0px 0px #161616;
   cursor: pointer;
+  color: #ffe400;
 }
 
 @media screen and (max-width: 875px) {
