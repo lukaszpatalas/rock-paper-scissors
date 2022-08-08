@@ -2,7 +2,6 @@ let playerScore = 0;
 let computerScore = 0;
 
 function game() {
-    repeatGame();
     const buttons = document.querySelectorAll(".player-select > div.game-select");
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
@@ -92,6 +91,7 @@ function playRound(playerSelection, computerSelection) {
     // Extra check as scores can be updated in previous ifs
     if (playerScore === 3 || computerScore === 3) {
         roundInfo.textContent = declareWinner(playerScore, computerScore);
+        repeatGame();
     }
 }
 
