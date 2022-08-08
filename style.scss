@@ -138,15 +138,15 @@ hr {
     }
 
     .orange-hover:hover {
-        color: $jet-hover;
+        color: $jet-hover !important;
     }
 
     .yellow-hover:hover {
-        color: $gun-hover;
+        color: $gun-hover !important;
     }
 
     .green-hover:hover {
-        color: $bomb-hover
+        color: $bomb-hover !important;
     }
 }
 

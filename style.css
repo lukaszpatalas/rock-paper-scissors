@@ -112,13 +112,13 @@ hr {
   box-shadow: 4px 6px 0px 0px #161616;
 }
 .player-select .orange-hover:hover {
-  color: #ff652f;
+  color: #ff652f !important;
 }
 .player-select .yellow-hover:hover {
-  color: #ffe400;
+  color: #ffe400 !important;
 }
 .player-select .green-hover:hover {
-  color: #14a76c;
+  color: #14a76c !important;
 }
 
 .player-area {
