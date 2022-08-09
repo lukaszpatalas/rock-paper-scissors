@@ -8,3 +8,7 @@ between colours when deciding about colour layout.
 I will also take the opportunity to learn about using and styling 
 fontawesome icons, as I will be using them for the first time. 
 
+Issues to be fixed
+
+1. Disable hover effect on player icons after game is over.
+2. Refactor code to make it more modular
